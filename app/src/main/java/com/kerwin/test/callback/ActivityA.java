@@ -28,6 +28,30 @@ public class ActivityA extends Activity {
         }));
         startActivity(intent);
     }
+//
+//
+//    public void onTestForInnerClass(View view) {
+//        Intent intent = new Intent(this, ActivityB.class);
+//        intent.putExtra("listener", ListenerProxyUtils.newProxy(new Listener() {
+//            @Override
+//            public void test(String text) {
+//                Log.d("ActivityA", "test inner class " + text);
+//            }
+//        }));
+//        startActivity(intent);
+//    }
+//
+//
+//    public void onTestForInnerClass(View view) {
+//        Intent intent = new Intent(this, ActivityB.class);
+//        intent.putExtra("listener", new Listener() {
+//            @Override
+//            public void test(String text) {
+//                Log.d("ActivityA", "test inner class " + text);
+//            }
+//        });
+//        startActivity(intent);
+//    }
 
     public void onTestForStaticInnerClass(View view) {
         Intent intent = new Intent(this, ActivityB.class);
